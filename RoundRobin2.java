@@ -23,14 +23,13 @@ public class RoundRobin2 {
         countlines.nextLine();
     }
     //Lines of file counted
-              // :P
     
     //START Process of putting info into objects from file
     Scanner scan = new Scanner(new FileReader(file));
         for(int g = 0; g < lineCount; g++) { //repeats amount of times that there are lines.
             String current = scan.nextLine();//current line
 
-            //temporary variables to then be added to the objects. My program will fail with anything but numbers, don't put anything other than numbers :)
+            //temporary variables to then be added to the objects. My program will fail with anything but numbers, don't put anything other than numbers
             String xpid = "";
             String xarrive = "";
             String xburst = "";
@@ -77,7 +76,7 @@ public class RoundRobin2 {
                 
         }
         
-        //START!!
+        //START!
         LinkedList<Process> readyQueue = new LinkedList();//initialize the readyQueue
         int time = 0;
         int timeQ = 1;
